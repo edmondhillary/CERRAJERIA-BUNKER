@@ -1,0 +1,24 @@
+.faqSection__grid {
+  display: grid;
+  gap: 10px;
+}
+
+.faqSection__item {
+  padding: 14px;
+}
+
+.faqSection__question {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.faqSection__answer {
+  margin-top: 10px;
+}
+
+@media (min-width: 900px) {
+  .faqSection__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

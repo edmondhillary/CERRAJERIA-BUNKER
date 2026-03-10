@@ -1,0 +1,129 @@
+.contactPage {
+  margin-top: 22px;
+  padding-bottom: 10px;
+}
+
+.contactPage__hero {
+  padding: 18px;
+}
+
+.contactPage__heroTop {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.contactPage__intro {
+  margin-top: 8px;
+  max-width: 64ch;
+}
+
+.contactPage__heroActions {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contactPage__info {
+  display: grid;
+  gap: 14px;
+}
+
+.contactPage__infoBox {
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--c-border);
+  min-height: 100%;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.contactPage__infoBox:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-1);
+  border-color: rgba(179, 32, 37, 0.18);
+}
+
+.contactPage__infoHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.contactPage__infoHead h3 {
+  margin: 0;
+}
+
+.contactPage__icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--c-border);
+  background: rgba(179, 32, 37, 0.07);
+  flex-shrink: 0;
+}
+
+.contactPage__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: var(--c-red);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contactPage__infoBody p {
+  margin: 0 0 6px;
+  color: var(--c-text);
+}
+
+.contactPage__infoLink {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  color: var(--c-red);
+}
+
+.contactPage__infoLink:hover {
+  text-decoration: underline;
+}
+
+.contactPage__note {
+  margin-top: 10px;
+}
+
+.contactPage__mapBlock {
+  margin-top: 22px;
+}
+
+.contactPage__mapBlock .mapsShowcase {
+  margin-top: 0;
+}
+
+@media (min-width: 700px) {
+  .contactPage__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .contactPage__heroTop {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: start;
+  }
+
+  .contactPage__heroActions {
+    justify-content: flex-end;
+  }
+
+  .contactPage__info {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contactPage__mapBlock {
+    margin-top: 26px;
+  }
+}

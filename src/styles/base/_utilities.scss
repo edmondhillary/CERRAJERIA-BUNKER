@@ -1,0 +1,21 @@
+.hide-desktop {
+  display: block;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .hide-desktop {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+}

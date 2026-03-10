@@ -1,0 +1,41 @@
+.aboutPage {
+  margin-top: 18px;
+}
+
+.aboutPage__hero {
+  display: grid;
+  gap: 30px;
+  padding: 18px;
+}
+
+.aboutPage__heroImage img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.aboutPage__grid {
+  display: grid;
+  gap: 12px;
+}
+
+.aboutPage__card {
+  padding: 14px;
+}
+
+@media (min-width: 900px) {
+
+  .aboutPage__hero {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+
+  .aboutPage__heroImage img {
+    height: 360px;
+  }
+
+  .aboutPage__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,67 @@
+.trustBar {
+  margin-top: 14px;
+}
+
+.trustBar__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 12px;
+}
+
+.trustBar__item {
+  padding: 12px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+}
+
+.trustBar__strong {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.08rem;
+  color: var(--c-ink);
+}
+
+@media (min-width: 900px) {
+  .trustBar__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.trustBar__grid {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+}
+
+.trustBar__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trustBar__icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: rgba(179, 32, 37, 0.08);
+  border-radius: 6px;
+}
+
+.trustBar__icon svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--c-red);
+  stroke-width: 2;
+  fill: none;
+}
+
+.trustBar__strong {
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .trustBar__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

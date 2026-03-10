@@ -1,0 +1,47 @@
+@use "./mixins" as *;
+
+body {
+  @include bodyFont;
+  line-height: 1.55;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 10px;
+  color: var(--c-ink);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.02;
+  @include titleFont;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.08;
+  @include titleFont;
+}
+
+h3 {
+  font-size: 1.05rem;
+  @include titleFont;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+.small {
+  font-size: 0.92rem;
+  color: var(--c-muted);
+}
+
+.rule-red {
+  display: inline-block;
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--c-red);
+}

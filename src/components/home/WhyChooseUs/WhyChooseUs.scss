@@ -1,0 +1,15 @@
+.whyChooseUs__grid {
+  display: grid;
+  gap: 12px;
+}
+
+.whyChooseUs__card {
+  padding: 14px;
+  background: #fff;
+}
+
+@media (min-width: 900px) {
+  .whyChooseUs__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

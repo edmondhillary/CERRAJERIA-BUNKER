@@ -1,0 +1,123 @@
+.header {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.header__inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  padding: 12px 0;
+  align-items: center;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__mark {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: var(--c-red);
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.header__name {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  line-height: 1;
+}
+
+.header__tag {
+  margin-top: 2px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__link {
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.header__link:hover {
+  border-color: var(--c-border);
+}
+
+.header__link.is-active {
+  border-color: var(--c-ink);
+}
+
+.header__ctas {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.header__navMobile {
+  border-top: 1px solid var(--c-border);
+  background: #fff;
+}
+
+.header__navMobileInner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.header__linkMobile {
+  padding: 12px 8px;
+  text-align: center;
+  border-right: 1px solid var(--c-border);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.header__linkMobile:last-child {
+  border-right: 0;
+}
+
+.header__linkMobile.is-active {
+  background: var(--c-ink);
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .header__inner {
+    grid-template-columns: 1fr 1fr auto;
+  }
+}
+.header__brand {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 900px) {
+  .header__logo {
+    height: 44px;
+  }
+}

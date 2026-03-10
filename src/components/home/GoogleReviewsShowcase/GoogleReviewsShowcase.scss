@@ -1,0 +1,210 @@
+.bunkerReviews {
+  background:
+    linear-gradient(180deg, rgba(179, 32, 37, 0.04), transparent 32%),
+    transparent;
+}
+
+.bunkerReviews__head {
+  display: grid;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.bunkerReviews__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.bunkerReviews__googleBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 12px;
+  border: 1px solid var(--c-border);
+  background: #fff;
+  color: var(--c-ink);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.bunkerReviews__googleIcon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: block;
+}
+
+.bunkerReviews__intro p {
+  max-width: 62ch;
+}
+
+.bunkerReviews__summary {
+  padding: 16px;
+  background:
+    linear-gradient(135deg, rgba(179, 32, 37, 0.08), transparent 55%),
+    #fff;
+}
+
+.bunkerReviews__summaryTop {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.bunkerReviews__summaryBrand {
+  display: flex;
+  align-items: center;
+}
+
+.bunkerReviews__summaryLogo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.bunkerReviews__summaryMain {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.bunkerReviews__score {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  line-height: 1;
+  color: var(--c-red);
+}
+
+.bunkerReviews__summaryText {
+  margin-top: 6px;
+  font-size: 0.92rem;
+  color: var(--c-muted);
+}
+
+.bunkerReviews__stars {
+  display: flex;
+  gap: 4px;
+}
+
+.bunkerReviews__stars svg {
+  width: 18px;
+  height: 18px;
+  fill: #f3b61f;
+  display: block;
+}
+
+.bunkerReviews__grid {
+  display: grid;
+  gap: 12px;
+}
+
+.bunkerReviews__card {
+  display: block;
+  height: 100%;
+  padding: 16px;
+  background: #fff;
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.bunkerReviews__card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-1);
+  border-color: rgba(179, 32, 37, 0.18);
+}
+
+.bunkerReviews__cardTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.bunkerReviews__avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: var(--c-ink);
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.bunkerReviews__person {
+  min-width: 0;
+}
+
+.bunkerReviews__name {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.bunkerReviews__text {
+  color: var(--c-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.bunkerReviews__footer {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bunkerReviews__tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.34rem 0.68rem;
+  border: 1px solid var(--c-border);
+  background: #fafafa;
+  color: var(--c-red);
+  font-size: 0.8rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.bunkerReviews__source {
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.bunkerReviews__source.is-web {
+  color: var(--c-ink);
+}
+
+@media (min-width: 900px) {
+  .bunkerReviews__head {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: start;
+  }
+
+  .bunkerReviews__summaryTop {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  .bunkerReviews__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1150px) {
+  .bunkerReviews__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

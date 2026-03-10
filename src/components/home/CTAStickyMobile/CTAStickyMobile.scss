@@ -1,0 +1,35 @@
+.stickyCta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 999;
+  border-top: 1px solid var(--c-border);
+  background: #fff;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.stickyCta__btn {
+  min-height: 48px;
+  padding: 14px 10px;
+  text-align: center;
+  border-right: 1px solid var(--c-border);
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.stickyCta__btn:last-child {
+  border-right: 0;
+}
+
+.stickyCta__btn--call {
+  background: var(--c-red);
+  color: #fff;
+}
+
+.stickyCta__btn--wa {
+  background: var(--c-ink);
+  color: #fff;
+}

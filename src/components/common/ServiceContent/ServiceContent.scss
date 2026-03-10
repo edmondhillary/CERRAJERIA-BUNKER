@@ -1,0 +1,20 @@
+.serviceContent__grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.serviceContent__box {
+  padding: 14px;
+}
+
+.serviceContent__box ul,
+.serviceContent__box ol {
+  margin: 12px 0 0;
+}
+
+@media (min-width: 900px) {
+  .serviceContent__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,137 @@
+.hero {
+  padding: 18px 0 14px;
+}
+
+.hero__inner {
+  display: grid;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.hero__copy {
+  padding: 10px 0;
+}
+
+.hero__text {
+  max-width: 62ch;
+}
+
+.hero__meta {
+  margin-top: 10px;
+}
+
+.hero__visual {
+  background: #fff;
+  padding: 14px;
+  box-shadow: var(--shadow-1);
+}
+
+.hero__poster {
+  position: relative;
+  min-height: 380px;
+  border: 2px solid var(--c-ink);
+  overflow: hidden;
+  background: var(--c-ink);
+}
+
+.hero__collage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100%;
+}
+
+.hero__collageItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__collageImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(10%) brightness(0.42) contrast(1.02);
+  transform: scale(1.02);
+}
+
+.hero__collageItem:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(179, 32, 37, 0.24), rgba(30, 30, 30, 0.36)),
+    linear-gradient(to top, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.08));
+  pointer-events: none;
+}
+
+.hero__posterContent {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 22px 20px;
+  display: grid;
+  align-content: center;
+  gap: 8px;
+}
+
+.hero__posterTop,
+.hero__posterMain {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+.hero__posterTop {
+  font-size: 1.35rem;
+}
+
+.hero__posterMain {
+  font-size: clamp(3rem, 7vw, 5rem);
+  line-height: 0.95;
+}
+
+.hero__posterRule {
+  height: 6px;
+  width: 100%;
+  background: var(--c-red);
+  box-shadow: 0 2px 10px rgba(179, 32, 37, 0.25);
+}
+
+.hero__posterBottom {
+  font-size: 0.84rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22px;
+  color: rgba(255, 255, 255, 0.84);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+
+  .hero__poster {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__poster {
+    min-height: 300px;
+  }
+
+  .hero__posterContent {
+    padding: 18px 16px;
+  }
+
+  .hero__posterTop {
+    font-size: 1.1rem;
+  }
+}

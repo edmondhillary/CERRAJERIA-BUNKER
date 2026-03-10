@@ -1,0 +1,21 @@
+.contactSection__box {
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.contactSection__actions {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .contactSection__box {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+  }
+
+  .contactSection__actions {
+    justify-content: flex-end;
+  }
+}
