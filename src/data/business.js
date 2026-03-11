@@ -35,5 +35,5 @@ export const business = {
   },
 
   // Para cuando definas dominio real en Vercel
-  siteUrl: import.meta.env.VITE_SITE_URL || "https://TU-DOMINIO.vercel.app"
+  siteUrl: "https://cerrajeriarosariocentro.com"
 };

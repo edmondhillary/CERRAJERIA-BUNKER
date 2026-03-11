@@ -1,21 +1,68 @@
-<!-- FILE: public/sitemap.xml -->
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://TU-DOMINIO.vercel.app/</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/sobre-nosotros</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/contacto</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/preguntas-frecuentes</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/legal/privacidad</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/legal/cookies</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/legal/terminos</loc></url>
 
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/cerrajeria-del-hogar</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/duplicado-de-llaves-en-el-acto</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/cajas-fuertes</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/cerraduras-computadas</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/service-puertas-blindadas</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/herrajes-para-puertas</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/trabajos-a-domicilio</loc></url>
-  <url><loc>https://TU-DOMINIO.vercel.app/servicios/urgencias-24-horas</loc></url>
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/sobre-nosotros</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/contacto</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/preguntas-frecuentes</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/legal/privacidad</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/legal/cookies</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/legal/terminos</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/cerrajeria-del-hogar</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/duplicado-de-llaves-en-el-acto</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/cajas-fuertes</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/cerraduras-computadas</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/service-puertas-blindadas</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/herrajes-para-puertas</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/trabajos-a-domicilio</loc>
+  </url>
+
+  <url>
+    <loc>https://cerrajeriarosariocentro.com/servicios/urgencias-24-horas</loc>
+  </url>
+
 </urlset>

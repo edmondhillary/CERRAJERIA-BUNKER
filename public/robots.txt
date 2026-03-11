@@ -1,5 +1,4 @@
-# FILE: public/robots.txt
 User-agent: *
 Allow: /
 
-Sitemap: https://TU-DOMINIO.vercel.app/sitemap.xml
+Sitemap: https://cerrajeriarosariocentro.com/sitemap.xml
