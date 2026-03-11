@@ -9,28 +9,14 @@ export default function CTAStickyMobile() {
   });
 
   return (
-    <div className="stickyCta hide-desktop" aria-label="Acciones rápidas">
-      <a className="stickyCta__btn stickyCta__btn--call" href={`tel:${business.phone.telE164}`}>
-        Llamar
-      </a>
-
-      <a
-        className="stickyCta__btn stickyCta__btn--wa"
-        href={whatsappUrl}
-        target="_blank"
-        rel="noreferrer"
-      >
-        WhatsApp
-      </a>
-
-      <a
-        className="stickyCta__btn"
-        href={business.maps.query}
-        target="_blank"
-        rel="noreferrer"
-      >
-        Mapa
-      </a>
-    </div>
+    <a
+      className="whatsappFloat"
+      href={whatsappUrl}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Contactar por WhatsApp"
+    >
+      <img src="/images/icons/whatsapp.svg" alt="WhatsApp" />
+    </a>
   );
 }
