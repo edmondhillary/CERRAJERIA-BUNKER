@@ -34,7 +34,9 @@ export default function ServiceDetail() {
       <ServiceContent service={service} />
 
       <section className="serviceDetailPage__related page-section">
-        <h2 className="rule-red">También te puede interesar</h2>
+        <h2 className="rule-red serviceDetailPage__sectionTitle">
+          También te puede interesar
+        </h2>
 
         <div className="serviceDetailPage__relatedGrid">
           {relatedServices.map((item) => (
@@ -43,15 +45,17 @@ export default function ServiceDetail() {
               to={`/servicios/${item.slug}`}
               className="serviceDetailPage__relatedCard surface"
             >
-              <h3>{item.name}</h3>
-              <p className="small">{item.short}</p>
+              <h3 className="serviceDetailPage__relatedCardTitle">{item.name}</h3>
+              <p className="serviceDetailPage__relatedCardText">{item.short}</p>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="page-section">
-        <h2 className="rule-red">Preguntas frecuentes</h2>
+      <section className="page-section serviceDetailPage__faqIntro">
+        <h2 className="rule-red serviceDetailPage__sectionTitle">
+          Preguntas frecuentes
+        </h2>
       </section>
 
       <FAQSection items={service.faq} />

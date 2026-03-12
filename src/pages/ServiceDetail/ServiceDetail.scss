@@ -1,20 +1,82 @@
 .serviceDetailPage {
-  margin-top: 18px;
+  margin-top: 24px;
+  padding-bottom: 48px;
+}
+
+.serviceDetailPage > * + * {
+  margin-top: 28px;
+}
+
+.serviceDetailPage__sectionTitle {
+  margin: 0 0 18px;
+  line-height: 1.15;
+}
+
+.serviceDetailPage__related {
+  margin-top: 8px;
 }
 
 .serviceDetailPage__relatedGrid {
-  margin-top: 12px;
   display: grid;
-  gap: 12px;
+  gap: 18px;
+  margin-top: 18px;
 }
 
 .serviceDetailPage__relatedCard {
-  padding: 14px;
+  display: block;
   background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0;
+  padding: 22px;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.serviceDetailPage__relatedCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(0, 0, 0, 0.16);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.serviceDetailPage__relatedCardTitle {
+  margin: 0 0 10px;
+  line-height: 1.2;
+}
+
+.serviceDetailPage__relatedCardText {
+  margin: 0;
+  line-height: 1.65;
+  color: #2b2b2b;
+}
+
+.serviceDetailPage__faqIntro {
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .serviceDetailPage {
+    margin-top: 28px;
+  }
+
+  .serviceDetailPage > * + * {
+    margin-top: 36px;
+  }
+
+  .serviceDetailPage__relatedGrid {
+    gap: 20px;
+  }
+
+  .serviceDetailPage__relatedCard {
+    padding: 24px;
+  }
 }
 
 @media (min-width: 900px) {
   .serviceDetailPage__relatedGrid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

@@ -7,9 +7,9 @@ export default function Hero() {
     <section className="hero">
       <div className="container hero__inner">
         <div className="hero__copy">
-          <span className="badge">Urgencias 24 hs · Rosario</span>
+          <span className="hero__badge">Urgencias 24 hs · Rosario</span>
 
-          <h1>
+          <h1 className="hero__title">
             Cerrajería en Rosario con {business.yearsExperience} años de experiencia
           </h1>
 
@@ -18,7 +18,9 @@ export default function Hero() {
             en el acto, cajas fuertes y cerraduras computadas. Soluciones al detalle con honestidad y respeto.
           </p>
 
-          <CTAButtons />
+          <div className="hero__actions">
+            <CTAButtons />
+          </div>
 
           <div className="hero__meta small">
             {business.address.street}, Rosario · Tel: {business.phone.display}
@@ -28,7 +30,6 @@ export default function Hero() {
         <div className="hero__visual surface">
           <div className="hero__poster">
             <div className="hero__collage">
-
               <div className="hero__collageItem">
                 <img
                   src="/images/services/card-cerrajeria-hogar.webp"
@@ -60,9 +61,9 @@ export default function Hero() {
             </div>
 
             <div className="hero__posterContent">
-              <div className="hero__posterTop">CERRAJERÍA</div>
+              <div className="hero__posterTop">Cerrajería</div>
               <div className="hero__posterRule" />
-              <div className="hero__posterMain">BUNKER</div>
+              <div className="hero__posterMain">Bunker</div>
               <div className="hero__posterBottom">
                 Moreno 492 · Rosario · Urgencias 24 hs
               </div>
